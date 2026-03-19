@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <div class="intro">
+      <h2>Assignment 1 Testing: Use the search bar to filter through</h2>
+      <p>Filter through, you can use keywords.</p>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search..." />
+
+    <div class="filters">
+      <div class="filter-group">
+        <label>Type:</label>
+        <button class="filter-btn active" data-filter="type" data-value="all">All</button>
+        <button class="filter-btn" data-filter="type" data-value="Cardio">Cardio</button>
+        <button class="filter-btn" data-filter="type" data-value="Strength">Strength</button>
+        <button class="filter-btn" data-filter="type" data-value="HIIT">HIIT</button>
+        <button class="filter-btn" data-filter="type" data-value="Yoga">Yoga</button>
+        <button class="filter-btn" data-filter="type" data-value="Mobility">Mobility</button>
+      </div>
+      <div class="filter-group">
+        <label>Difficulty:</label>
+        <button class="filter-btn active" data-filter="difficulty" data-value="all">All</button>
+        <button class="filter-btn" data-filter="difficulty" data-value="Beginner">Beginner</button>
+        <button class="filter-btn" data-filter="difficulty" data-value="Intermediate">Intermediate</button>
+        <button class="filter-btn" data-filter="difficulty" data-value="Advanced">Advanced</button>
+      </div>
+    </div>
+
+    <p class="result-count"><span id="resultCount">0</span> test items found</p>
+
+    <div class="grid" id="workoutGrid"></div>
+  </main>
+
+  <footer>
+    <p>Assignment1Testing</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
